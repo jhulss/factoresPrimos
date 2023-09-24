@@ -6,6 +6,10 @@ class factoresPrimos{
 
   calcularFactores(numero)
   {
+    if (numero > 1)
+    {
+      this.lista.push(numero)
+    }
     return this.lista;
   }
 
