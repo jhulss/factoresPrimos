@@ -23,5 +23,4 @@ describe("Factores primos", () => {
   });
 
 
-
 });

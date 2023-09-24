@@ -6,23 +6,16 @@ class factoresPrimos{
 
   calcularFactores(numero)
   {
-    let div = 2;
-    if (numero > 1)
+    for (let factor = 2; numero > 1; factor++)
     {
-      while (numero%div === 0)
+      while (numero % factor === 0)
       {
-        this.lista.push(div);
-        numero /= div;
-      }
-      div++;
-      if (numero > 1)
-      {
-        this.lista.push(numero);
+        this.lista.push(factor);
+        numero /= factor;
       }
     }
     return this.lista;
   }
-
 
 }
 
