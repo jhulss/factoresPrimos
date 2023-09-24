@@ -1,7 +1,10 @@
-import sumar from "./sumador.js";
+import factoresPrimos from "./sumador";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+
+describe("Factores primos", () => {
+  it("se deberia retornar una lista vacia", () => {
+    const calcular = new factoresPrimos();
+    expect(calcular.calcularFactores(1)).toEqual([]);
   });
+
 });

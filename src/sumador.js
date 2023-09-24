@@ -1,5 +1,15 @@
-function sumar(a, b) {
-  return a + b;
+class factoresPrimos{
+  constructor()
+  {
+    this.lista = [];
+  }
+
+  calcularFactores(numero)
+  {
+    return this.lista;
+  }
+
+
 }
 
-export default sumar;
+export default factoresPrimos;
