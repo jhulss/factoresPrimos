@@ -6,16 +6,18 @@ class factoresPrimos{
 
   calcularFactores(numero)
   {
+    let div = 2;
     if (numero > 1)
     {
-      while (numero%2 === 0)
+      while (numero%div === 0)
       {
-        this.lista.push(2);
-        numero /= 2;
+        this.lista.push(div);
+        numero /= div;
       }
+      div++;
       if (numero > 1)
       {
-        this.lista.push(2);
+        this.lista.push(numero);
       }
     }
     return this.lista;
